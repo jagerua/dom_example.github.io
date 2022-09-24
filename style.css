@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  background-color: #69696938;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100vh;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6443;
+  height: 100vh;
+  width: 900px;
+}
+
+.info img {
+  max-width: 700px;
+  height: 700px;
+}
+
+.push01, .push02, .push03, .push04, .push05, .push06 {
+  background-color: #fff;
+  margin: 10px 10px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 30px;
+  font-weight: 700;
+  color: darkgrey;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 4px 1px rgb(0 0 0 / 26%),
+            rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.btngroup:hover {
+  background-color: #9d9d9d1f;
+  color: #fff;
+  transition: 0.5s ease-in;
+}
+
+.active {
+  background-color: #9d9d9d1f;
+}
+
+.push06 {
+  margin-bottom: 0;
+}
+
+.img-title {
+  position: relative;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.img-title h3::before {
+  content: '';
+  position: absolute;
+  top: -13px;
+  right: -30px;
+  width: 50px;
+  height: 40px;
+  background: url(./assets/hart.png) no-repeat;
+  background-size: 50px;
+}
+
+.img-title h3:hover:before {
+  display: inline-block;
+  transition: all 0.5s ease-out;
+  transform: rotateY(360deg);
+}
+
+h3:hover {
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: 0.4s ease-in;
+}
+
+.phone {
+  /* display: none; */
+}
+
+.tablet, .watch, .laptop, .pc, .electronics {
+  display: none;
+}
